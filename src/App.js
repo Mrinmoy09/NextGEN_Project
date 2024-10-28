@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Entrepreneurs from './components/Entrepreneurs';
+import Goals from './components/Goals';
+import KeyInnovations from './components/KeyInnovations';
+import Timeline from './components/Timeline';
+import KeyComponents from './components/KeyComponents';
+import RiskManagement from './components/RiskManagement';
+import ExpectedOutcomes from './components/ExpectedOutcomes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <Entrepreneurs />
+      <Goals />
+      <KeyInnovations />
+      <Timeline />
+      <KeyComponents />
+      <RiskManagement />
+      <ExpectedOutcomes />
     </div>
   );
 }
